@@ -55,7 +55,7 @@
       .nav { display: flex; min-height: 78px; align-items: center; justify-content: space-between; gap: 28px; }
       .brand { display: inline-flex; align-items: center; gap: 10px; flex: 0 0 auto; font-size: 1.55rem; font-weight: 900; letter-spacing: -.05em; }
       .brand-mark { display: grid; width: 39px; height: 39px; place-items: center; border-radius: 12px 12px 12px 4px; background: var(--orange); color: white; }
-      .brand-mark svg { width: 23px; height: 23px; }
+      .brand-mark img { display: block; width: 100%; height: 100%; }
       .nav-links { display: flex; align-items: center; gap: clamp(15px, 2.3vw, 30px); margin: 0; padding: 0; list-style: none; }
       .nav-links a { color: #4f5a6b; font-size: .96rem; font-weight: 700; transition: color .2s ease; }
       .nav-links a:hover, .nav-links a[aria-current="location"] { color: var(--orange-dark); }
@@ -388,6 +388,7 @@
       }
 
     </style>
+    <link rel="icon" type="image/svg+xml" href="tawasul-mark.svg">
   </head>
   <body>
     <header class="site-header">
@@ -397,7 +398,7 @@
       <nav class="nav container" aria-label="التنقل الرئيسي">
         <a class="brand" href="#home" aria-label="تواصل، الصفحة الرئيسية">
           <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12.2 19.5 4l-5 16-3.3-6.2L4 12.2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m11.2 13.8 4.2-4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <img src="tawasul-mark.svg" width="39" height="39" alt="">
           </span>
           <span>تواصل</span>
         </a>
@@ -692,7 +693,7 @@
 
     <footer class="site-footer">
       <div class="container footer-row">
-        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.2 19.5 4l-5 16-3.3-6.2L4 12.2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m11.2 13.8 4.2-4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span>تواصل</span></a>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><img src="tawasul-mark.svg" width="39" height="39" alt=""></span><span>تواصل</span></a>
         <p>© <span id="current-year"></span> تواصل. جميع الحقوق محفوظة.</p>
         <div class="footer-links"><a href="#services">خدماتنا</a><a href="#portfolio">أعمالنا</a><a href="#contact">تواصل معنا</a></div>
       </div>
